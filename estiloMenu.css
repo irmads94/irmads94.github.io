@@ -1,0 +1,122 @@
+          /* * {
+				margin:0px;
+				padding:0px;
+                
+			}*/
+
+            body,html{
+                height: 100%;
+                margin: 0;
+            }
+
+
+            footer{
+                width: auto;
+                height: 20px;
+                margin-top: 300px ;  
+                color:#e0d8b0;             
+                text-align: center;
+               font-family: 'Raleway', sans-serif;
+             
+                }
+
+            h3 {
+             color:#e0d8b0;             
+            font-family: 'Raleway', sans-serif;
+             
+            font-size: 20px;
+            text-align: left;
+            margin-top: 50px;
+            }
+
+
+            body{
+                background-color: darkcyan;
+            }
+			
+           .header {
+            background-image: url(encabezado.jpg);
+            height: 200px;
+            background-position: center center;
+            }
+
+            h1 {
+            color: #41292C;
+            font-family: 'Covered By Your Grace', sans-serif;
+            font-size: 100px;
+            line-height: 76px;
+            margin: 0;
+            position: relative;
+            text-align: center;
+            top: 20%;
+            }
+
+
+            /*
+            color: #f3e5ab;*/
+            h2 {
+            color: #808080;
+            font-family: 'Barrio', cursive;
+            font-size: 50px;
+            line-height: 76px;
+            margin: 0;
+            position: relative;
+            text-align: center;
+            top: 20%;
+            }
+
+			#header {
+				position: absolute;
+                width:100%;
+                font-family: 'Raleway', sans-serif;
+                margin:auto;
+				
+			}
+			
+            #cuerpo{
+                background-color: darkcyan;
+            }
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:500px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#33CCCC;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			

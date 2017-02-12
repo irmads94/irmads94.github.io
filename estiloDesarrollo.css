@@ -1,0 +1,21 @@
+
+.concepto{
+    color:#e0d8bf;             
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 50px;
+}
+
+dd{
+    margin-left: 80px;
+    color:#e0d8b0;             
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    padding: 10px;
+    margin: 10px;
+    float: right;
+    width: 500px;
+}
