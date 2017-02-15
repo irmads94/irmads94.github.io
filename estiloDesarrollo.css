@@ -6,6 +6,46 @@
     margin-left: 50px;
 }
 
+.Subtitulos
+{
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.centerImg{
+    margin-left: 300px;
+    margin-top: 100px;
+    float: center;
+    }
+
+.tableSol{
+    border-color: #41292C;
+    border-width: 10px;
+    border-style: inset;
+    background-color:#41292C; 
+    
+    font-family: 'Raleway', sans-serif;
+    
+    margin-left: 200px;
+
+    
+    
+}
+
+.sr{
+    background-color: #00cccc;
+    text-align: center;
+}
+
+.back{
+    text-align: center;
+    background-color: #00cccc;
+}
+
+
 dd{
     margin-left: 80px;
     color:#e0d8b0;             
@@ -13,9 +53,16 @@ dd{
     font-family: 'Raleway', sans-serif;
 }
 
-img{
+.introWeb{
     padding: 10px;
     margin: 10px;
     float: right;
     width: 500px;
+}
+
+.htmlImg{
+    margin-right: 20px;
+
+    float: right;
+    width: 400px;
 }

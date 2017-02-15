@@ -3,6 +3,17 @@
 				padding:0px;
                 
 			}*/
+            .textoVi{
+                list-style-type: square;
+                margin-left: 100px;
+
+                  color:#41292C;             
+                text-align: left;
+               font-family: 'Raleway', sans-serif;
+               font-size: 18px;
+               font-weight: bold;
+            
+            }
 
             a{
                 text-decoration: none;
@@ -16,18 +27,20 @@
                 border-width: 5px;
                 border-style: inset;
 
+                background-color:#00cccc; 
+
             }
             .Titulos1{
                  font-family: 'Raleway', sans-serif;
                  text-align: left;
                  color:white;
-                 margin-left: 18px;
+                 margin-left: 20px;
             }
             .parrafos{
                 color:#e0d8b0;             
                 text-align: left;
                font-family: 'Raleway', sans-serif;
-               font-size: 14px;
+               font-size: 18px;
                  margin-left: 50px;
             }
             .Fechas
@@ -66,9 +79,10 @@
              color:#e0d8b0;             
             font-family: 'Raleway', sans-serif;
              
-            font-size: 20px;
+            font-size: 28px;
             text-align: left;
             margin-top: 50px;
+            margin-left: 100px;
             }
 
 

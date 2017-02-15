@@ -29,6 +29,366 @@
     
 <main>  
 
+
+    <section>
+        <h3>Conceptos Básicos</h3>
+
+        <p > 
+            <dl >
+                
+                <section>   
+                    <img class= "introWeb" src="elementos.png" alt="Tim Berners" width="200px">
+                </section>
+                
+                <article>
+                <dt class="concepto">HTML</dt>
+                <dd>Hypertext Markup Languaje</dd>
+                <dd>Las páginas HTML son documentos de texto</dd>
+                <dd>HTML usa elementos para definir la estructura de la página</dd><br>
+                </article>
+
+                <article>
+                <dt class="concepto">Elementos</dt>
+                <dd>Los elementos se definen por etiquetas.</dd>
+                <br>
+                </article>
+                <article>
+              
+                <dt class="concepto">Contenido</dt>
+                <dd>El Contenido de un elemento se encierra entre etiquetas</dd>
+                <br>
+                </article>
+                <article>
+                <dt class="concepto">Etiquetas</dt>
+                <dd>Las etiquetas tienen  que estar encerradas en parentesis angulares < y ></dd>
+                <dd>Existen etiquetas de apertura &lt;etiqueta&gt; y de cierre &lt;/etiqueta></dd>
+                <dd>El nombre de la etiqueta debe ser el mismo y se distingue a la etiqueta de cierre con una diagonal</dd>
+                <dd>&lt;etiqueta&gt; CONTENIDO &lt;/etiqueta></dd>
+                <dd>Pueden tener Atributos los cuales se especifican en la etiqueta de inicio</dd><br>
+                </article>
+                <article>
+                <dt class="concepto">Atributos</dt>
+                <dd>Contiene información adicional acerca del Contenido</dd>
+                <dd>&lt;etiqueta atributo = "valor" &gt; CONTENIDO &lt;/etiqueta></dd><br>
+                </article>
+            </dl>
+        </p>
+    </section>
+
+    <section>   
+        <h3>Texto en HTML</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Encabezados </li>
+               
+                <section>   
+                    <img class= "htmlImg" src="encabezados.jpg" alt="Encabezados en HTML" width="100px">
+                </section>
+               
+                <p class="parrafos">
+                    Los encabezados en HTML se pueden comparar con los encabezados en otros tipos de medios de comunicación.
+                    Por ejemplo, en los periódicos,grandes encabezados se utilizan normalmente para captar la atención del lector.
+                    Otras veces, los encabezados se utilizan para describir el contenido, como el título de una película o un 
+                    artículo educativo.<br><br>
+
+                    HTML sigue un patrón similar. En HTML, hay seis diferentes encabezados.
+                    Los encabezados se pueden utilizar para una variedad de propósitos, como titulos en secciones, artículos,
+                    u otras formas de contenido.<br><br> 
+                    
+                    La siguiente es la lista de los elementos de encabezado disponibles en HTML.
+                    Están ordenadas de mayor a menor en tamaño.<br><br>
+
+                    &lt;h1> - Se utiliza para los Encabezados principales, el resto de los encabezados más pequeños se utilizan para subtítulos.<br>
+                    &lt;h2><br>
+                    &lt;h3><br>
+                    &lt;h4><br>
+                    &lt;h5><br>
+                    &lt;h6><br>
+                </p>
+                
+                <li class="textoVi">Parrafos </li>
+                 <section>   
+                    <img class= "htmlImg" src="parrafo.jpg" alt="Ejemplo de un parrafo en HTML" width="200px">
+                </section>
+               
+                <p class="parrafos">
+                    Muchas veces, los encabezados tienen el propósito de enfatizar o agrandar solo unas pocas palabras.
+                    Si desea agregar el contenido en formato de párrafo, puede añadir un párrafo mediante el elemento de 
+                    párrafo &lt;p>.<br><br>
+                    
+                    Los párrafos son ideales para la expansión de la cantidad de contenido (texto) en una página web. 
+                    Se tiene que tomar en cuenta que grandes cantidades de texto en formato de párrafo puede abrumar 
+                    los visitantes de la página web. <br>
+                    Por ejemplo, si varios párrafos en su página web contienen grandes cantidades de texto, la página web
+                    podría llegar a ser difícil de consumir.
+
+                </p>
+                <br><br><br>
+                <li class="textoVi">Saltos de linea</li>
+                 <section>   
+                    <img class= "htmlImg" src="saltos.png" alt="Encabezados en HTML" width="100px">
+                </section>
+               
+                <p class="parrafos">Para poder hacer un salto de linea en HTML se utiliza el elemento &lt;br/>
+                El elemento de salto de línea es una etiqueta de cierre automático. Se puede utilizar en cualquier lugar dentro del código HTML y un salto de línea se mostrará en el navegador.<br><br>
+                Ejemplo: <br><br>
+                Este es un parrafo &lt;br> Y este otro.<br>
+                El código en el ejemplo anterior dará lugar a una salida que tiene el siguiente aspecto:<br>
+
+                Este es un párrafo<br>Y este otro.<br>
+                
+
+                Nota : Los saltos de línea no son la forma habitual de manipulación de la colocación de los elementos HTML.<br> 
+                </p>
+                <li class="textoVi">Negritas, Resaltado,Cursivas y Énfasis</li>
+                 <section>   
+                    <img class= "htmlImg" src="negritas.png" alt="Encabezados en HTML" width="100px">
+                </section>
+               
+                <p class="parrafos">
+                Existen dos etiquetas que hacen que nuestro texto se convierta en negrita. La utilización de cualquiera de ellas es en principio indiferente. La primera es la etiqueta &lt;b> y la otra es la etiqueta &lt;strong>. Aquí va un ejemplo de código y lo que veríamos en pantalla:<br><br>
+                Ejemplo:<br>
+
+                Esta palabra la vamos a poner en &lt;b>negrita&lt;/b> y esta otra &lt;strong>también&lt;/strong><br>
+                Esta palabra la vamos a poner en <b>negrita</b> y esta otra <strong>también</strong>.<br><br>
+
+                
+                Normalmente se preferirá usar técnicas CSS en lugar de esta etiqueta, pero es una etiqueta que debemos conocer.<br><br>
+
+                Para escribir un texto en cursiva se ha utilizado mucho la etiqueta &lt;i>. También se ha utilizado la etiqueta &lt;em>. Como en el caso de la negrita, aunque podrían atribuírseles distintos significados no vamos a prestarle atención a esta cuestión ahora. Aquí presentamos un ejemplo:<br><br>
+                Ejemplo<br>
+
+                Esta palabra la vamos a poner en &lt;i>cursiva&lt;/i> y esta otra &lt;em>también&lt;/em><br>
+                Esta palabra la vamos a poner en <i>cursiva</i> y esta otra <em>también</em><br>
+                </p>
+
+                <li class="textoVi">Carácteres especiales</li>
+                <section>   
+                    <img class= "htmlImg" src="especiales.jpg" alt="Encabezados en HTML" width="100px">
+                </section>
+               
+                <p class="parrafos">
+                    Los motivos por los que debemos usar los caracteres especiales son los siguientes:<br>
+
+Una página web se ha de ver en países distintos, que usan conjuntos de caracteres distintos. El lenguaje HTML nos ofrece un mecanismo por el que podemos estar seguros que una serie de caracteres "raros" se van a ver bien en todos los ordenadores del mundo, independientemente de su juego de caracteres local.<br><br>
+Por otra parte, ciertos caracteres forman parte de las etiquetas como el "mayor qué" o "menor qué" que las delimitan. Mediante los caracteres especiales se definen unos códigos, que debemos usar cuando queremos poner uno de estos caracteres en una página,
+
+                </p>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+<section>   
+        <h3>Estructura semántica de un HTML</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Encabezado </li>
+               
+               
+                <p class="parrafos">
+                    &lt;header> <br><br>
+                    Es el equivalente a la cabecera de la página web. Contiene el título o nombre de la empresa/titular de la página, logo e información relacionada.
+
+                </p>
+                
+                <li class="textoVi">Navegación </li>
+               
+                <p class="parrafos">
+                  &lt;nav><br><br>
+                  Contiene los enlaces (barra de navegación) externos o internos de la página.
+                </p>
+
+                  <section>   
+                    <img class= "htmlImg" src="estructuraIm.png" alt="Estructura semantica HTML" width="100px">
+                </section>
+              
+                <li class="textoVi">Contenido Principal</li>
+               
+                <p class="parrafos">
+                    &lt;main><br><br>
+                    Utilizaremos la etiqueta para abarcar la parte de la web donde se encuentra el contenido que los visitantes quieren leer. 
+                </p>
+                <li class="textoVi">Sección </li>
+               
+                <p class="parrafos">
+                  &lt;section><br><br>
+                  Es una gran caja que sirve para mostrar grandes bloques de contenido de la página. Puede contener diferentes subapartados de diferentes temas (de tipo &lt;article>).
+                </p>
+                <li class="textoVi">Artículo </li>
+               
+                <p class="parrafos">
+                  &lt;article><br><br>
+                  Es una caja independiente de contenido que puede estar contenida (o no) dentro de un &lt;section>. Normalmente utilizada para contenidos no demasiado extensos.
+
+                </p>
+                <li class="textoVi">Barra Lateral </li>
+               
+                <p class="parrafos">
+                  &lt;aside><br><br>
+                  Define un bloque de contenido relacionado de manera indirecta con el contenido principal, pero que no es esencial para la compresión del mismo.
+                </p>
+                <li class="textoVi">Pie de página</li>
+               
+                <p class="parrafos">
+                  &lt;footer><br><br>
+                  Equivale al pie de página de un apartado concreto (&lt;section>, &lt;article>...) o de la página web en general.
+                </p>
+               
+            </ul>
+        </div>
+    </section>
+
+
+
+<section>   
+        <h3>Enlaces </h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Relativos</li>
+               
+               
+                <p class="parrafos">
+                    Son enlaces externos y por lo tanto necesitan del protocólo http://<br><br>
+                    Es conveniente que se abran en una nueva pestaña<br><br>
+                    ETIQUETA<br>
+                    &lt;a><br><br>
+                    ATRIBUTOS<br>
+                    href= "página.html"- Enlace/origen del archivo<br>
+                    target=_blank - A una nueva página<br>
+
+                    target=_self - En la misma página<br>
+
+                </p>
+                
+                <section>   
+                    <img class= "htmlImg" src="enlacesIm.jpg" alt="Estructura semantica HTML" width="100px">
+                </section>
+                <li class="textoVi">Absolutos</li>
+               
+                <p class="parrafos">
+                 El destino debe estar en la misma carpeta<br><br>
+                  En caso de que el destino este en el mismo archivo es necesario un ID.<br><br>
+
+                    ETIQUETA<br>
+                    &lt;a><br><br>
+                    ATRIBUTOS<br>
+                    href= "http:// "- Enlace<br>
+                    target=_blank - A una nueva página<br>
+
+                    target=_self - En la misma página<br>
+                </p>
+                <li class="textoVi">Contenido para descarga</li>
+               
+                <p class="parrafos">
+                    Un enlace también puede generar la descarga de un archivo, lo unico que se le tiene que agregar es un atributo llamado "download". <br>
+
+                    
+                    ETIQUETA<br>
+                    &lt;a href="" download><br><br>
+                    ATRIBUTOS<br>
+                    href= "http:// "- Enlace<br>
+                    target=_blank - A una nueva página<br>
+                    target=_self - En la misma página<br><br>
+                    
+                    Ejemplo:
+                    <a href="temario.pdf" download>Descargar temario del curso </a>
+         
+                 
+                </p>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+<section>   
+        <h3>Imágenes </h3>
+        <div class="textoH">
+               
+                <section>   
+                    <img class= "htmlImg" src="imagen.png" alt="Estructura semantica HTML" width="100px">
+                </section>
+               
+                <p class="parrafos">
+                   La etiqueta &lt;img> que funciona para colocar imágenes dentro de una página web.
+
+                Para poner una imágen utilizamos el siguiente código:<br><br>
+
+                &LT;img src="imagenHTML.jpg"><br><br>
+
+                Donde "imagenHTML.jpg" es la imagen que vamos a colocar. Deberá estar ubicada en el mismo directorio. Si queremos colocar una imagen con HTML en una página que no está colocada dentro del mismo directorio, podemos usar una ruta absoluta:<br><br>
+
+                &lt;img src="folder/imagenHTML.jpg"><br><br>
+
+                <ul>    
+                <li class="textoVi">ETIQUETA</li>
+               
+               
+                <p class="parrafos">
+                    &lt;img><br><br></p>    
+                    
+                <li class="textoVi">ATRIBUTOS</li>
+
+                <p class="parrafos">
+                    src="Nombre del archivo"<br>
+                    height="Altura"<br>
+                    width="Ancho"<br>
+                    alt="Texto alternativo(¿De que trata esa imagen?)" <br>
+                    
+                </p>
+            
+
+      </p>
+                
+            
+        </div>
+    </section>
+
+
+
+
+<section>   
+        <h3>Tipos de Listas</h3>
+        <div class="textoH">
+            <ul>    
+                
+                <li class="textoVi">Listas Ordenadas</li>
+               
+               
+                <p class="parrafos">
+                    &lt;al> <br><br>
+                    
+                </p>
+                <section>   
+                    <img class= "htmlImg" src="listas.png" alt="Estructura semantica HTML" width="100px">
+                </section>
+              
+                <li class="textoVi">Listas No Ordenadas</li>
+               
+                <p class="parrafos">
+                  &lt;ul><br><br>
+                  
+                  </p>
+
+                  
+                <li class="textoVi">Listas de Descripción</li>
+               
+                <p class="parrafos">
+                    &lt;dl><br><br>
+                     
+                </p>
+            </ul>
+        </div>
+    </section>
+
+
+
+
 </main>
 
 </body>
