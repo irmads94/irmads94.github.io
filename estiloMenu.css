@@ -36,6 +36,15 @@
                  color:white;
                  margin-left: 20px;
             }
+            
+            .ejem{
+                 font-family: 'Raleway', sans-serif;
+                 margin: auto;
+                 font-size: 30px;
+                 text-decoration: none;
+               
+            }
+
             .parrafos{
                 color:#e0d8b0;             
                 text-align: left;
@@ -68,7 +77,6 @@
             footer{
                 width: auto;
                 height: 20px;
-                margin-top: 300px ;  
                 color:#e0d8b0;             
                 text-align: center;
                font-family: 'Raleway', sans-serif;

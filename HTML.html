@@ -362,7 +362,11 @@ Por otra parte, ciertos caracteres forman parte de las etiquetas como el "mayor 
                
                 <p class="parrafos">
                     &lt;al> <br><br>
-                    
+                    Si lo que pretendemos es definir una lista ordenada, lo tendremos que hacer entre las etiquetas <ol> </ol> (ol indica ordered list). Además, cada elemento de la lista se escribirá con la misma etiqueta que para las listas no ordenadas: <li>. Pero al ser listas ordenadas los símbolos por defecto serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos elementos de la lista.
+
+En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.
+
+
                 </p>
                 <section>   
                     <img class= "htmlImg" src="listas.png" alt="Estructura semantica HTML" width="100px">
@@ -372,7 +376,17 @@ Por otra parte, ciertos caracteres forman parte de las etiquetas como el "mayor 
                
                 <p class="parrafos">
                   &lt;ul><br><br>
-                  
+                  Las listas no ordenadas son aquellas que se encuentran entre las etiquetas <ul> y </ul> (ul indica unordered list), etiqueta de apertura y cierre respectivamente. Si queremos añadir un nuevo punto, lo tendremos que hacer dentro de las etiquetas <li> y </li>.
+
+Si no le indicamos nada a la etiqueta <li>, la viñeta o marca que indica que se trata de un elemento de una lista se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto o marca a emplear, debemos indicarlo específicamente. En el pasado se usaba el atributo “type”, hoy en día no recomendado (deprecated). Con este atributo se podía hacer que la lista estuviera definida por puntos negros (li type="disc"), por puntos con el fondo blanco (li type="circle") o por cuadrados (li type="square").
+
+La sintaxis recomendada para indicar la apariencia se basa en usar CSS como indicamos a continuación:
+
+<ul style="list-style-type:disc">
+
+<ul style="list-style-type:circle">
+
+<ul style="list-style-type:square">
                   </p>
 
                   
@@ -380,6 +394,20 @@ Por otra parte, ciertos caracteres forman parte de las etiquetas como el "mayor 
                
                 <p class="parrafos">
                     &lt;dl><br><br>
+
+
+                    Este tipo de listas no es de uso frecuente, por lo que vamos a citarlas solo por si encontramos este tipo de código en alguna página web poder interpretar su significado. Las listas de definiciones se usan cuando queremos hacer una enumeración tipo “diccionario” donde tenemos varios términos y su definición o descripción. 
+                    Estos términos y sus definiciones o descripciones podríamos ponerlos de varias maneras dentro de una página web (como texto sin más, como lista ordenada, no ordenada…) y una de estas maneras es ponerlo como lista de definiciones.
+
+Para crear una lista de definiciones debemos usar las etiquetas <dl>, <dt> y <dd>. Vamos a explicarlas por partes:
+
+La etiqueta <dl> indica que dentro de ella va a ir una lista de definiciones o lista de descripciones.
+
+La etiqueta <dt> indica que dentro de ella va un término que vamos a definir.
+
+La etiqueta <dd> nos dice que dentro de ella se encuentra una definición o descripción asociada a un término. Un término podría tener varias descripciones. Por ejemplo el término Autor podría tener como descripciones: Mateo Renzi, Olivo Pascua, Jorge Guillén.
+
+Los listados de definición se separarán automáticamente si escribimos varios de ellos.
                      
                 </p>
             </ul>
