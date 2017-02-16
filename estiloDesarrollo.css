@@ -62,7 +62,16 @@ dd{
 
 .htmlImg{
     margin-right: 20px;
-
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 400px;
+}
+.cssImg{
+    /*position: relative;*/
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     float: right;
     width: 400px;
 }

@@ -27,9 +27,412 @@
 		</div>
     </nav>
     
+
+
 <main>  
 
+    <section>   
+        <h3>Versiones</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">CSS1</li>
+               <p class="parrafos">
+                   Borrador->1996
+                </p><p class="parrafos">
+                   Liberado->1999
+                </p><p class="parrafos">
+                   Soportado por todos los navegadores->2001
+                </p>
+                
+                  <section>   
+                    <img class= "cssImg" src="cssVersiones2.png" alt="Versiones de CSS" width="100px">
+                </section>
+                
+                <li class="textoVi">CSS2</li>
+                <p class="parrafos">
+                   Borrador->1998
+                </p><p class="parrafos">
+                   Liberado->2007
+                </p><p class="parrafos">
+                   Soportado por todos los navegadores-> ?
+                </p>
+              
+                <li class="textoVi">CSS3</li>
+                <p class="parrafos">
+                   Borrador->2001
+                </p><p class="parrafos">
+                   Liberado->2013
+                </p><p class="parrafos">
+                   Soportado por todos los navegadores-> ?
+                </p>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section>   
+        <h3>Reglas</h3>
+        <div class="textoH">
+            <ul>    
+                <p class="parrafos">
+                    Permiten cambiar la apariencia(presentación) de los elementos Html.
+                </p>
+               
+                  <section>   
+                    <img class= "cssImg" src="reglas.png" alt="" width="100px">
+                </section>
+
+                <li class="textoVi">Sintaxis general</li>
+               <p class="parrafos">
+                   Selector { Declaraciones }
+                </p>
+                
+                <li class="textoVi">Declaraciones</li>
+                <p class="parrafos">
+                    Propiedad : Valor;
+                </p>
+
+              
+            </ul>
+        </div>
+    </section>
+
+
+   <!-- 
+-->
+
+    
+    <section>   
+        <h3>Tipos de estilos</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Por default</li>
+                <p class="parrafos">
+                    Son los estilos que ya tiene el navegador definido.
+                </p>
+
+                <li class="textoVi">Del usuario</li>
+                <p class="parrafos">
+                    Son los estilos que se encuentran en un archivo local.
+                </p>
+
+                <li class="textoVi">Estilo externos</li>
+                
+                  <section>   
+                    <img class= "cssImg" src="estiloexterno.jpg" alt="Estilos de CSS" width="100px">
+                </section>
+                <p class="parrafos">
+                    Estan definidos en una hoja de estilos externa, utiliza la etiqueta &lt;link> para hacer referencia al archivo.
+                
+                <p class="parrafos">Atributos:<br> <br>
+                href<br>
+                type<br>
+                rel<br>
+                </p>
+
+                </p>
+                <p class="parrafos"> Ejemplo:  <br>
+                Dentro del archivo *.css<br>
+                h1 { color:blue; }  </p>
+
+
+                <li class="textoVi">Estilo interno</li>
+                <p class="parrafos">
+                    Este tipo de estilo se definen mediante la etiqueta &lt;style>
+                </p>
+                <p class="parrafos"> Ejemplo:                   <br>
+                Tiene que estar declarado dentro del head.<br>
+                &lt;style><br>
+                h1 { color:blue; }  <br>
+                &lt;/style>
+                </p>
+
+                
+                <li class="textoVi">Estilo en linea</li>
+                <p class="parrafos">
+                    Con este tipo de estilo se asigna la propiedad y el valor como atributo del elemento. 
+                </p>
+                
+                <p class="parrafos"> Ejemplo:                   <br>
+                &lt;h1 style="color: blue;">Titulo&lt;/h1><br>
+                </p>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <section>   
+        <h3>Selectores</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Selector de tipo</li>
+                <p class="parrafos">Selecciona un tipo de elemento y aplica el estilo a todos los elementos del mismo tipo.<br><br>
+                Ejemplo: <br>
+                p { text-align : justify; }<br>
+                Todos los parrafos justificados.</p>
+
+                <li class="textoVi">Selector Descendiente</li>
+                <p class="parrafos">Aplica el estilo a elementos que se estan contenidos dentro de otros elementos.<br><br>
+                Ejemplo: <br>
+                p b { color : red; }<br>
+                Todo lo que esta en un parrafo en negritas, se pondra en color rojo.</p>
+                
+                <li class="textoVi">Selector hijo inmediato</li>
+
+                
+                  <section>   
+                    <img class= "cssImg" src="selectores.jpg" alt="Selectores de CSS" width="100px">
+                </section>
+
+                <p class="parrafos">Similar al Descendiente pero mas restrictivo. Aplica el estilo solamente a los elementos que sean hijos directos de otro elemento.<br><br>
+                Ejemplo: <br>
+                p > b { color : blue }<br>
+                &lt;p>&lt;i>&lt;b>Hola&lt;/b>&lt;/i>&lt;/p><br>
+                No es hijo directo, entonces no se aplica el estilo(color azul).</p>
+                
+                <li class="textoVi">Selector por ID</li>
+
+                <p class="parrafos">Un ID es un atributo de un elemento HTML y se utiliza para aplicar un estilo de manera particular.<br><br>
+                Ejemplo: <br>
+                &lt;p id = "introduccion" >Este es un parrafo&lt;/p><br>
+                Un selector por ID utiliza el simbolo #<br>
+                #introduccion { color : blue; }<br>
+                
+                <li class="textoVi">Selector por clase</li>
+                <p class="parrafos">Aplicar estilo a un conjunto de elementos.<br><br>
+                Ejemplo: <br>
+                &lt;p class = "especial" >Este es un parrafo&lt;/p><br>
+                .<br>.<br>.<br>
+                &lt;p class = "especial" >Este es otro parrafo&lt;/p><br>   
+                Un selector por clase utiliza el simbolo .<br>
+                .especial { color : red; }<br>
+                
+                <li class="textoVi">Selector universal</li>
+                <p class="parrafos">Aplica el mismo estilo a todos los elementos de la página.<br>
+                Los estilos se heredan, si aplicas un estilo a un elemento, todos los elementos dentro de él tendran el mismo estilo, pero se pueden modificar por medio de declaraciones adicionales en cascada.<br><br>
+            </ul>
+        </div>
+    </section>
+
+    <section>   
+        <h3>Agrupación de Elementos</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">DIV</li>
+                <section>   
+                    <img class= "cssImg" src="divspan.png" alt="DIV" width="100px">
+                </section>
+               
+                <p class="parrafos">
+                    Agrupa elementos en bloque.<br><br>
+                    &lt;div> ELEMENTOS &lt;/div>
+                </p>
+
+                <li class="textoVi">SPAN</li>
+                <p class="parrafos">
+                    Agrupa elementos en linea.<br><br>
+                    &lt;span> ELEMENTOS &lt;/div>
+                </p>
+            </ul>
+        </div>
+    </section>
+
+    <section>   
+        <h3>Propiedades</h3>
+        <div class="textoH">
+            <ul>    
+              
+                <li class="textoVi">Color</li>
+
+                <p class="parrafos">
+                    Formato permitido:<br>
+                    Nombre (140)<br>
+                    Hexadecimal (3 digitos / 6 digitos)<br>
+                    RGB / RGBA
+                    HSL / HSLA
+                </p>
+
+                <li class="textoVi">Fuente</li>
+                <p class="parrafos">
+                    Familia de fuentes<br>
+                    <ul>
+                        <li class="textoVi2">Serif</li>
+
+                        <section>   
+                            <img class= "cssImg" src="fuenteFamilia.png" alt="DIV" width="50px">
+                        </section>
+
+                        <p class="parrafos">
+                            Las letras tienen detalles en los extremos. Un claro ejemplo es Times New Roman.
+                        </p>
+
+                        <li class="textoVi2">Sans-Serif</li>
+                        <p class="parrafos">
+                            Las letras no tienen detalles pero es de ancho variable. Arial es un tipo de letra Sans-Serif.
+                        </p>
+                        
+                        <li class="textoVi2">Monospace</li>
+                        <p class="parrafos">
+                            Las letras tienen un ancho fijo. Un ejemplo de esta familia es la letra Courier.
+                        </p>
+                    </ul>
+                </p>
+
+                <p class="parrafos">
+                    Propiedades de fuentes<br>
+                    
+                    <ul>
+                        <li class="textoVi2">font-family</li>
+
+                        <p class="parrafos">
+                            Tipo de familia(mencionadas arriba) a la que pertenece la fuente.
+                        </p>
+
+                        <li class="textoVi2">font-style</li>
+                        <p class="parrafos">
+                            Estilo que puede tener la fuente (Normal, italic, oblique).
+                        </p>
+                        
+                        <li class="textoVi2">font-size</li>
+                        <p class="parrafos">
+                            Tamaño de la fuente definido en px, em y porcentaje(%).
+                        </p>
+
+                        <li class="textoVi2">font-weight</li>
+                        <p class="parrafos">
+                            Grosor con el que se muestran las letras del texto(normal, bold).
+                        </p>
+                    </ul>
+
+
+                </p>
+
+                <li class="textoVi">Texto</li>
+                <p class="parrafos">
+
+
+                    <ul>
+                        <li class="textoVi2">Efectos</li>
+                        <p class="parrafos">
+                             Permite añadir diferentes "decoraciones" o "efectos" al texto. Por ejemplo, se puede subrayar el texto, tacharlo o ponerle un subrayado superior.
+                        </p>
+
+                                
+                        <section>   
+                            <img class= "cssImg" src="textoDecoracion.png" alt="DIV" width="100px">
+                        </section>
+
+                        <li class="textoVi2">Alineación</li>
+                        <p class="parrafos">
+                            Los valores posibles de esta propiedad son: left(texto alineado a la izquierda), right (texto alineado a la derecha) o center (texto con alineación centrada). Además, el valor justify(alineación justificada) alargará cada línea de forma que los márgenes izquierdo y derecho estén justificados. Esta tipo de presentación la habrás visto, por ejemplo, en periódicos y revistas.
+                        </p>
+                        
+                        <li class="textoVi2">Transformación</li>
+                        <p class="parrafos">
+                            Controla la escritura en mayúsculas de un texto. Puedes elegir entre los valores capitalize, uppercase, olowercase, sin importar cómo aparece el texto original en el código HTML.
+                        </p>
+                    </ul>
+                </p>
+            </ul>
+        </div>
+    </section>
+
+  <section>   
+        <h3>Modelo de cajas</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Acomodo de Cajas</li>
+                <p class="parrafos">
+                    Todos los elementos de HTML estan encerradas en una caja.
+                </p>
+
+                
+                 <section>   
+                    <img class= "cssImg" src="acomodoCajas.png" alt="DIV" width="100px">
+                </section>
+
+                <p class="parrafos">
+                    Existen dos tipos de acomodo de cajas: <br><br>
+                    BLOQUE como por ejemplo &lt;div>, &lt;p>, &lt;img>, &lt;table> <br><br>
+                    LINEA como por ejemplo &lt;b>, &lt;i>, &lt;strong>, &lt;em>, &lt;span> <br><br>
+                </p>
+
+
+                <li class="textoVi">Posicionamiento de Cajas</li>
+                <p class="parrafos">
+
+                        <ul>
+                        <li class="textoVi2">Estatico</li>
+                        <p class="parrafos">
+                            position : default; <br><br>
+                            Es el posicionamiento que tiene por default las paginas web. El pos es en flujo y este puede ser en linea o bloques.
+                        </p>
+
+                        <li class="textoVi2">Absoluto</li>
+                        <p class="parrafos">
+                            position : absolute; <br><br>
+                            Se saca la caja del flujo normal, y se especifica su posición respecto al contenedor.
+                        </p>
+                        
+                        <li class="textoVi2">Relativo</li>
+                        <p class="parrafos">
+                            position : relative; <br><br> 
+                            Es el posicionamiento que le corresponde de acuerdo al flujo. 
+                        </p>
+
+                        <li class="textoVi2">Fijo</li>
+                        <p class="parrafos">
+                            position : fixed; <br><br>
+                            Se mantiene una posición aun después del scroll. Es muy utilizado en menus.
+                        </p>
+                    </ul>
+                </p>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section>   
+        <h3>Margen, relleno y borde</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Relleno</li>
+
+                 <section>   
+                    <img class= "cssImg" src="margenRellenoBorde.png" alt="DIV" width="100px">
+                </section>
+               
+                <p class="parrafos">
+                    Padding.<br><br>
+                    Establece cada uno de los rellenos horizontales y verticales de un elemento.
+                </p>
+
+                <li class="textoVi">Margen</li>
+
+                
+
+                <p class="parrafos">
+                   Margin.<br><br>
+                   Establece cada uno de los márgenes horizontales y verticales de un elemento.
+                </p>
+
+                
+                <li class="textoVi">Borde</li>
+                <p class="parrafos">
+                    Border.<br><br>
+                    Las propiedades de borde de CSS le permiten especificar el estilo y el color del borde del elemento.
+                </p>
+            </ul>
+        </div>
+    </section>
+
+
 </main>
+
 
 </body>
 </html>

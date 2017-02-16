@@ -13,6 +13,18 @@
                font-size: 18px;
                font-weight: bold;
             
+            }    
+            
+            .textoVi2{
+                list-style-type: square;
+                margin-left: 100px;
+
+                  color:#41292C;             
+                text-align: left;
+               font-family: 'Raleway', sans-serif;
+               font-size: 14px;
+               font-weight: bold;
+            
             }
 
             a{
@@ -47,11 +59,13 @@
 
             .parrafos{
                 color:#e0d8b0;             
-                text-align: left;
+                text-align: justify;
                font-family: 'Raleway', sans-serif;
                font-size: 18px;
                  margin-left: 50px;
+                 margin-right: 50px;
             }
+
             .Fechas
             {
                 color:#e0d8b0;             
