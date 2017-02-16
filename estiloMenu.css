@@ -86,11 +86,14 @@
             h3 {
              color:#e0d8b0;             
             font-family: 'Raleway', sans-serif;
-             
+             background-color: #33CCCC;
             font-size: 28px;
-            text-align: left;
+            
+            text-align: center;
             margin-top: 50px;
             margin-left: 100px;
+            margin-right: 100px;
+            height: 50px;
             }
 
 
