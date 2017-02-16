@@ -359,57 +359,112 @@ Por otra parte, ciertos caracteres forman parte de las etiquetas como el "mayor 
                 
                 <li class="textoVi">Listas Ordenadas</li>
                
-               
-                <p class="parrafos">
-                    &lt;al> <br><br>
-                    Si lo que pretendemos es definir una lista ordenada, lo tendremos que hacer entre las etiquetas <ol> </ol> (ol indica ordered list). Además, cada elemento de la lista se escribirá con la misma etiqueta que para las listas no ordenadas: <li>. Pero al ser listas ordenadas los símbolos por defecto serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos elementos de la lista.
-
-En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.
-
-
-                </p>
                 <section>   
                     <img class= "htmlImg" src="listas.png" alt="Estructura semantica HTML" width="100px">
                 </section>
+               
+                <p class="parrafos">
+                     Si lo que pretendemos es definir una lista ordenada, lo tendremos que hacer entre las etiquetas &lt;ol> (ol indica ordered list)<br><br>
+
+            Cada elemento de la lista se escribirá con la etiqueta &lt;li>.Al ser listas ordenadas los símbolos por defecto serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos elementos de la lista.
+
+                </p>
               
                 <li class="textoVi">Listas No Ordenadas</li>
                
+                <section>   
+                    <img class= "htmlImg" src="listasNoOrde.png" alt="Estructura semantica HTML" width="100px">
+                </section>
+
                 <p class="parrafos">
-                  &lt;ul><br><br>
-                  Las listas no ordenadas son aquellas que se encuentran entre las etiquetas <ul> y </ul> (ul indica unordered list), etiqueta de apertura y cierre respectivamente. Si queremos añadir un nuevo punto, lo tendremos que hacer dentro de las etiquetas <li> y </li>.
+                  Las listas no ordenadas son aquellas que se encuentran entre las etiquetas &lt;ul> (ul indica unordered list)<br><br>
+                  Cada elemento de la lista se escribirá con la etiqueta &lt;li>.<br><br><br><br><br><br><br><br><br><br><br>
 
-Si no le indicamos nada a la etiqueta <li>, la viñeta o marca que indica que se trata de un elemento de una lista se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto o marca a emplear, debemos indicarlo específicamente. En el pasado se usaba el atributo “type”, hoy en día no recomendado (deprecated). Con este atributo se podía hacer que la lista estuviera definida por puntos negros (li type="disc"), por puntos con el fondo blanco (li type="circle") o por cuadrados (li type="square").
-
-La sintaxis recomendada para indicar la apariencia se basa en usar CSS como indicamos a continuación:
-
-<ul style="list-style-type:disc">
-
-<ul style="list-style-type:circle">
-
-<ul style="list-style-type:square">
-                  </p>
-
-                  
                 <li class="textoVi">Listas de Descripción</li>
                
+                <section>   
+                    <img class= "htmlImg" src="dd.jpg" alt="Estructura semantica HTML" width="100px">
+                </section>
+
                 <p class="parrafos">
-                    &lt;dl><br><br>
+                    
+                    Las listas de definiciones se usan cuando queremos hacer una enumeración tipo “diccionario” donde tenemos varios términos y su definición o descripción. <br><br>
+                    Estos términos y sus definiciones o descripciones podríamos ponerlos de varias maneras dentro de una página web (como texto sin más, como lista ordenada, no ordenada…) y una de estas maneras es ponerlo como lista de definiciones.<br><br>
 
+                    Para crear una lista de definiciones debemos usar las etiquetas:<br><br> 
+                    &lt;dl><br>
+                    Indica que dentro de ella va a ir una lista de definiciones o lista de descripciones.<br><br>
 
-                    Este tipo de listas no es de uso frecuente, por lo que vamos a citarlas solo por si encontramos este tipo de código en alguna página web poder interpretar su significado. Las listas de definiciones se usan cuando queremos hacer una enumeración tipo “diccionario” donde tenemos varios términos y su definición o descripción. 
-                    Estos términos y sus definiciones o descripciones podríamos ponerlos de varias maneras dentro de una página web (como texto sin más, como lista ordenada, no ordenada…) y una de estas maneras es ponerlo como lista de definiciones.
+                    &lt;dt><br>
+                    Indica que dentro de ella va un término que vamos a definir.<br><br>
 
-Para crear una lista de definiciones debemos usar las etiquetas <dl>, <dt> y <dd>. Vamos a explicarlas por partes:
-
-La etiqueta <dl> indica que dentro de ella va a ir una lista de definiciones o lista de descripciones.
-
-La etiqueta <dt> indica que dentro de ella va un término que vamos a definir.
-
-La etiqueta <dd> nos dice que dentro de ella se encuentra una definición o descripción asociada a un término. Un término podría tener varias descripciones. Por ejemplo el término Autor podría tener como descripciones: Mateo Renzi, Olivo Pascua, Jorge Guillén.
-
-Los listados de definición se separarán automáticamente si escribimos varios de ellos.
-                     
+                    &lt;dd><br>
+                    Dice que dentro de ella se encuentra una definición o descripción asociada a un término. Un término podría tener varias descripciones. Por ejemplo el término Autor podría tener como descripciones: Mateo Renzi, Olivo Pascua, Jorge Guillén.                     
                 </p>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+<section>   
+        <h3>Tablas en HTML</h3>
+        <div class="textoH">
+            <ul>    
+                <li class="textoVi">Tabla </li>
+                <p class="parrafos">
+                    &lt;table> <br><br>
+                    Se emplea para definir tablas de datos
+                </p>
+                
+                <li class="textoVi">Descripción</li>               
+                <p class="parrafos">
+                  &lt;caption><br><br>
+                  Se emplea para definir la leyenda o título de una tabla
+                </p>
+
+                <li class="textoVi">Encabezado</li>
+                <p class="parrafos">
+                    &lt;thead><br><br>
+                Se emplea para definir los títulos de la tabla. Tenga en cuenta que los encabezados de la tabla aún requiere de una fila para contenerlos.
+                </p>
+
+                <li class="textoVi">Pie de página</li>
+                <p class="parrafos">
+                  &lt;tfoot><br><br>
+                   Se emplea para contener los totales de los datos de la tabla. Los pies de página se utilizan a menudo para contener sumas, diferencias, y otros resultados de los datos.
+                </p>
+
+                <section>   
+                    <img class= "htmlImg" src="tabla.png" alt="Estructuras de las tablas en HTML" width="100px">
+                </section>
+              
+                <li class="textoVi">Cuerpo de la página</li>
+                <p class="parrafos">
+                  &lt;tbody><br><br>
+                  Se emplea para contener todos los datos de la tabla, con exclusión de los encabezados de la tabla
+                </p>
+
+                <li class="textoVi">Fila</li>
+                <p class="parrafos">
+                  &lt;tr><br><br>
+                  Se emplea para definir cada fila de las tablas de datos
+                </p>
+
+                <li class="textoVi">Celda del encabezado</li>
+               <p class="parrafos">
+                  &lt;th><br><br>
+                  Se emplea para definir las celdas que son cabecera de una fila o de una columna de la tabla
+                </p>
+
+                <li class="textoVi">Celda del cuerpo y pie de página</li>
+               <p class="parrafos">
+                  &lt;td><br><br>
+                  Se emplea para definir cada una de las celdas que forman las filas de una tabla, es decir, las columnas de la tabla
+                </p>
+               
             </ul>
         </div>
     </section>
