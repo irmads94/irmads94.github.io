@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="estiloMenu.css" type="text/css">
     <link rel="stylesheet" href="estiloDesarrollo.css" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace%7CRaleway:100,500,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barrio%7CPangolin" rel="stylesheet">
 
 </head>
 <body>
@@ -18,48 +17,47 @@
             <h2>HTML</h2>
         </div>
     </header>
-  <nav>
-
-    <div id="header">
-			<ul class="nav">
-				<li><a href="index.html">Inicio</a></li>
-			</ul>
-		</div>
+   <nav>
+        <div id="header">
+            <a id="textoNav" href="index.html">.....................................................Inicio.....................................................</a>
+        </div>
     </nav>
-    
+
 <main>  
 
 <div>
     <h3>Conceptos Básicos</h3>
-    <img class= "introWeb" src="elementos.png" alt="Tim Berners">
+    
+    <div class="contenido">      
+        <img class= "introWeb" src="elementos.png" alt="Tim Berners">
     
 
-    <h4 class="concepto">HTML</h4>
-    <p class="parrafos">Hypertext Markup Languaje</p>
-    <p class="parrafos">Las páginas HTML son documentos de texto</p>
-    <p class="parrafos">HTML usa elementos para definir la estructura de la página</p>
+        <h4 class="concepto">HTML</h4>
+        <p class="parrafos">Hypertext Markup Languaje</p>
+        <p class="parrafos">Las páginas HTML son documentos de texto</p>
+        <p class="parrafos">HTML usa elementos para definir la estructura de la página</p>
+        
+
+        <h4 class="concepto">Elementos</h4>
+        <p class="parrafos">Los elementos se definen por etiquetas.</p>
+
+        
+        <h4 class="concepto">Contenido</h4>
+        <p class="parrafos">El Contenido de un elemento se encierra entre etiquetas</p>
     
 
-    <h4 class="concepto">Elementos</h4>
-    <p class="parrafos">Los elementos se definen por etiquetas.</p>
-
+        <h4 class="concepto">Etiquetas</h4>
+        <p class="parrafos">Las etiquetas tienen  que estar encerradas en parentesis angulares &lt; y ></p>
+        <p class="parrafos">Existen etiquetas de apertura &lt;etiqueta&gt; y de cierre &lt;/etiqueta></p>
+        <p class="parrafos">El nombre de la etiqueta debe ser el mismo y se distingue a la etiqueta de cierre con una diagonal</p>
+        <p class="parrafos">&lt;etiqueta&gt; CONTENIDO &lt;/etiqueta></p>
+        <p class="parrafos">Pueden tener Atributos los cuales se especifican en la etiqueta de inicio</p>
     
-    <h4 class="concepto">Contenido</h4>
-    <p class="parrafos">El Contenido de un elemento se encierra entre etiquetas</p>
-  
 
-    <h4 class="concepto">Etiquetas</h4>
-    <p class="parrafos">Las etiquetas tienen  que estar encerradas en parentesis angulares &lt; y ></p>
-    <p class="parrafos">Existen etiquetas de apertura &lt;etiqueta&gt; y de cierre &lt;/etiqueta></p>
-    <p class="parrafos">El nombre de la etiqueta debe ser el mismo y se distingue a la etiqueta de cierre con una diagonal</p>
-    <p class="parrafos">&lt;etiqueta&gt; CONTENIDO &lt;/etiqueta></p>
-    <p class="parrafos">Pueden tener Atributos los cuales se especifican en la etiqueta de inicio</p>
-   
-
-    <h4 class="concepto">Atributos</h4>
-    <p class="parrafos">Contiene información adicional acerca del Contenido</p>
-    <p class="parrafos">&lt;etiqueta atributo = "valor" &gt; CONTENIDO &lt;/etiqueta></p>
-   
+        <h4 class="concepto">Atributos</h4>
+        <p class="parrafos">Contiene información adicional acerca del Contenido</p>
+        <p class="parrafos">&lt;etiqueta atributo = "valor" &gt; CONTENIDO &lt;/etiqueta></p>
+   </div> 
 
 </div>
 
@@ -67,9 +65,9 @@
 <div>
     <h3>Texto</h3>
 
-    <div class="textoH">
+    <div class="contenido">
         
-        <h4 class="textoVi">Encabezados </h4>
+        <h4 class="concepto">Encabezados </h4>
         <img class= "htmlImg" src="encabezados.jpg" alt="Encabezados en HTML">
         <p class="parrafos">Los encabezados en HTML se pueden comparar con los encabezados en otros tipos de medios de comunicación.
         Por ejemplo, en los periódicos,grandes encabezados se utilizan normalmente para captar la atención del lector.
@@ -91,8 +89,8 @@
         <p class="parrafos">&lt;h6></p>
     </div>
 
-    <div>
-        <h4 class="textoVi">Parrafos </h4>
+    <div class="contenido">
+        <h4 class="concepto">Parrafos </h4>
         <img class= "htmlImg" src="parrafo.jpg" alt="Ejemplo de un parrafo en HTML"> <!-- width="200px"-->
         
         <p class="parrafos">
@@ -106,12 +104,12 @@
 
         <p class="parrafos">Por ejemplo, si varios párrafos en su página web contienen grandes cantidades de texto, la página web
             podría llegar a ser difícil de consumir.</p>
-            <br><br><br><br>
+        <br><br><br><br>
     </div>
 
 
-    <div>
-        <h4 class="textoVi">Saltos de linea</h4>
+    <div class="contenido">
+        <h4 class="concepto">Saltos de linea</h4>
         <img class= "htmlImg" src="saltos.png" alt="Encabezados en HTML"><!--  width="100px"-->
         
         <p class="parrafos">Para poder hacer un salto de linea en HTML se utiliza el elemento &lt;br/>
@@ -127,8 +125,8 @@
          <p class="parrafos">Nota : Los saltos de línea no son la forma habitual de manipulación de la colocación de los elementos HTML.</p>
     </div>        
 
-    <div>
-        <h4 class="textoVi">Negritas, Resaltado,Cursivas y Énfasis</h4>
+    <div class="contenido">
+        <h4 class="concepto">Negritas, Resaltado,Cursivas y Énfasis</h4>
         <img class= "htmlImg" src="negritas.png" alt="Encabezados en HTML"><!-- width="100px"-->
         
         <p class="parrafos">
@@ -150,8 +148,8 @@
         <p class="parrafos">Esta palabra la vamos a poner en <i>cursiva</i> y esta otra <em>también</em></p>    
     </div>    
 
-    <div>
-        <h4 class="textoVi">Carácteres especiales</h4>
+    <div class="contenido">
+        <h4 class="concepto">Carácteres especiales</h4>
         <img class= "htmlImg" src="especiales.jpg" alt="Encabezados en HTML"><!-- width="100px"-->
 
         <p class="parrafos">Los motivos por los que debemos usar los caracteres especiales son los siguientes:</p>
@@ -165,34 +163,34 @@
 
 <div>
     <h3>Estructura semántica</h3>
-    <div class="textoH">   
-        <h4 class="textoVi">Encabezado </h4>
+    <div class="contenido">
+        <h4 class="concepto">Encabezado </h4>
         <p class="parrafos">&lt;header> </p>    
         <p class="parrafos">Es el equivalente a la cabecera de la página web. Contiene el título o nombre de la empresa/titular de la página, logo e información relacionada.</p>
 
-        <h4 class="textoVi">Navegación </h4>
+        <h4 class="concepto">Navegación </h4>
         <p class="parrafos">&lt;nav></p>
         <p class="parrafos">Contiene los enlaces (barra de navegación) externos o internos de la página.</p>
 
         <img class= "htmlImg" src="estructuraIm.png" alt="Estructura semantica HTML"> <!-- width="100px"-->
         
-        <h4 class="textoVi">Contenido Principal</h4>
+        <h4 class="concepto">Contenido Principal</h4>
         <p class="parrafos">&lt;main></p>
         <p class="parrafos">Utilizaremos la etiqueta para abarcar la parte de la web donde se encuentra el contenido que los visitantes quieren leer.</p>
 
-        <h4 class="textoVi">Sección </h4>
+        <h4 class="concepto">Sección </h4>
         <p class="parrafos">&lt;section></p>
         <p class="parrafos">Es una gran caja que sirve para mostrar grandes bloques de contenido de la página. Puede contener diferentes subapartados de diferentes temas (de tipo &lt;article>).</p>
 
-        <h4 class="textoVi">Artículo </h4>
+        <h4 class="concepto">Artículo </h4>
         <p class="parrafos">&lt;article></p>
         <p class="parrafos">Es una caja independiente de contenido que puede estar contenida (o no) dentro de un &lt;section>. Normalmente utilizada para contenidos no demasiado extensos.</p>
 
-        <h4 class="textoVi">Barra Lateral </h4>
+        <h4 class="concepto">Barra Lateral </h4>
         <p class="parrafos">&lt;aside></p>
         <p class="parrafos">Define un bloque de contenido relacionado de manera indirecta con el contenido principal, pero que no es esencial para la compresión del mismo.</p>
 
-        <h4 class="textoVi">Pie de página</h4>
+        <h4 class="concepto">Pie de página</h4>
         <p class="parrafos">&lt;footer></p> 
         <p class="parrafos">Equivale al pie de página de un apartado concreto (&lt;section>, &lt;article>...) o de la página web en general.</p>
     </div>
@@ -201,235 +199,170 @@
 
 
 
-<section>   
-        <h3>Enlaces </h3>
-        <div class="textoH">
-            <ul>    
-                <li class="textoVi">Relativos</li>
-               
-               
-                <p class="parrafos">
-                    Son enlaces externos y por lo tanto necesitan del protocólo http://<br><br>
-                    Es conveniente que se abran en una nueva pestaña<br><br>
-                    ETIQUETA<br>
-                    &lt;a><br><br>
-                    ATRIBUTOS<br>
-                    href= "página.html"- Enlace/origen del archivo<br>
-                    target=_blank - A una nueva página<br>
+<div>   
+    <h3>Enlaces </h3>
+    <div class="contenido">
+        <h4 class="concepto">Relativos</h4>
+        <p class="parrafos">Son enlaces externos y por lo tanto necesitan del protocólo http://</p>
+        <p class="parrafos">Es conveniente que se abran en una nueva pestaña</p>    
+        <p class="parrafos">ETIQUETA</p>
+        <p class="parrafos">&lt;a></p>
+        <p class="parrafos">ATRIBUTOS</p>
+        <p class="parrafos">href= "página.html"- Enlace/origen del archivo</p>  
+        <p class="parrafos">target=_blank - A una nueva página</p>  
+        <p class="parrafos">target=_self - En la misma página</p>
+        
+       
+    </div>
 
-                    target=_self - En la misma página<br>
+    <div class="contenido">
+        <h4 class="concepto">Absolutos</h4>
+        <img class= "htmlImg" src="enlacesIm.jpg" alt="Estructura semantica HTML"> <!-- width="100px"> -->
+        <p class="parrafos">El destino debe estar en la misma carpeta</p>
+        <p class="parrafos">En caso de que el destino este en el mismo archivo es necesario un ID.</p>
+        <p class="parrafos">ETIQUETA</p>
+        <p class="parrafos">&lt;a></p>
+        <p class="parrafos">ATRIBUTOS</p>
+        <p class="parrafos">href= "http:// "- Enlace</p>
+        <p class="parrafos">target=_blank - A una nueva página</p>
+        <p class="parrafos">target=_self - En la misma página</p>
+    </div>
 
-                </p>
-                
-                <section>   
-                    <img class= "htmlImg" src="enlacesIm.jpg" alt="Estructura semantica HTML" width="100px">
-                </section>
-                <li class="textoVi">Absolutos</li>
-               
-                <p class="parrafos">
-                 El destino debe estar en la misma carpeta<br><br>
-                  En caso de que el destino este en el mismo archivo es necesario un ID.<br><br>
-
-                    ETIQUETA<br>
-                    &lt;a><br><br>
-                    ATRIBUTOS<br>
-                    href= "http:// "- Enlace<br>
-                    target=_blank - A una nueva página<br>
-
-                    target=_self - En la misma página<br>
-                </p>
-                <li class="textoVi">Contenido para descarga</li>
-               
-                <p class="parrafos">
-                    Un enlace también puede generar la descarga de un archivo, lo unico que se le tiene que agregar es un atributo llamado "download". <br>
-
-                    
-                    ETIQUETA<br>
-                    &lt;a href="" download><br><br>
-                    ATRIBUTOS<br>
-                    href= "http:// "- Enlace<br>
-                    target=_blank - A una nueva página<br>
-                    target=_self - En la misma página<br><br>
-                    
-                    Ejemplo:
-                    <a href="temario.pdf" download>Descargar temario del curso </a>
-         
-                 
-                </p>
-            </ul>
-        </div>
-    </section>
-
-
-
-
-<section>   
-        <h3>Imágenes </h3>
-        <div class="textoH">
-               
-                <section>   
-                    <img class= "htmlImg" src="imagen.png" alt="Estructura semantica HTML" width="100px">
-                </section>
-               
-                <p class="parrafos">
-                   La etiqueta &lt;img> que funciona para colocar imágenes dentro de una página web.
-
-                Para poner una imágen utilizamos el siguiente código:<br><br>
-
-                &LT;img src="imagenHTML.jpg"><br><br>
-
-                Donde "imagenHTML.jpg" es la imagen que vamos a colocar. Deberá estar ubicada en el mismo directorio. Si queremos colocar una imagen con HTML en una página que no está colocada dentro del mismo directorio, podemos usar una ruta absoluta:<br><br>
-
-                &lt;img src="folder/imagenHTML.jpg"><br><br>
-
-                <ul>    
-                <li class="textoVi">ETIQUETA</li>
-               
-               
-                <p class="parrafos">
-                    &lt;img><br><br></p>    
-                    
-                <li class="textoVi">ATRIBUTOS</li>
-
-                <p class="parrafos">
-                    src="Nombre del archivo"<br>
-                    height="Altura"<br>
-                    width="Ancho"<br>
-                    alt="Texto alternativo(¿De que trata esa imagen?)" <br>
-                    
-                </p>
+    <div class="contenido">
+        <h4 class="concepto">Contenido para descarga</h4>
+        
+        <p class="parrafos">Un enlace también puede generar la descarga de un archivo, lo unico que se le tiene que agregar es un atributo llamado "download". </p> 
+        <p class="parrafos">ETIQUETA</p>
+        <p class="parrafos">&lt;a href="" download></p>
+        <p class="parrafos">ATRIBUTOS</p>
+        <p class="parrafos">href= "http:// "- Enlace</p>
+        <p class="parrafos">target=_blank - A una nueva página</p>
+        <p class="parrafos">target=_self - En la misma página</p>
             
+        <p class="parrafos">Ejemplo:
+            <a href="temario.pdf" download> Descargar temario del curso </a>
+        </p>
+    </div>
+</div>
 
-      </p>
-                
-            
+<div>
+    <h3>Imágenes </h3>
+    <div class="contenido">
+        <p class="parrafos">La etiqueta &lt;img> que funciona para colocar imágenes dentro de una página web.
+        Para poner una imágen utilizamos el siguiente código:</p>
+        <p class="parrafos">&LT;img src="imagenHTML.jpg"></p>
+        <p class="parrafos">Donde "imagenHTML.jpg" es la imagen que vamos a colocar. Deberá estar ubicada en el mismo directorio. Si queremos colocar una imagen con HTML en una página que no está colocada dentro del mismo directorio, podemos usar una ruta absoluta:</p>
+        <p class="parrafos">&lt;img src="folder/imagenHTML.jpg"></p>
+
+        <div class="contenido">
+            <h4 class="concepto">ETIQUETA</h4>  
+            <img class= "htmlImg" src="imagen.png" alt="Estructura semantica HTML"> <!-- width="100px"> -->  
+            <p class="parrafos">&lt;img></p>    
         </div>
-    </section>
 
-
-
-
-<section>   
-        <h3>Tipos de Listas</h3>
-        <div class="textoH">
-            <ul>    
-                
-                <li class="textoVi">Listas Ordenadas</li>
-               
-                <section>   
-                    <img class= "htmlImg" src="listas.png" alt="Estructura semantica HTML" width="100px">
-                </section>
-               
-                <p class="parrafos">
-                     Si lo que pretendemos es definir una lista ordenada, lo tendremos que hacer entre las etiquetas &lt;ol> (ol indica ordered list)<br><br>
-
-            Cada elemento de la lista se escribirá con la etiqueta &lt;li>.Al ser listas ordenadas los símbolos por defecto serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos elementos de la lista.
-
-                </p>
-              
-                <li class="textoVi">Listas No Ordenadas</li>
-               
-                <section>   
-                    <img class= "htmlImg" src="listasNoOrde.png" alt="Estructura semantica HTML" width="100px">
-                </section>
-
-                <p class="parrafos">
-                  Las listas no ordenadas son aquellas que se encuentran entre las etiquetas &lt;ul> (ul indica unordered list)<br><br>
-                  Cada elemento de la lista se escribirá con la etiqueta &lt;li>.<br><br><br><br><br><br><br><br><br><br><br>
-
-                <li class="textoVi">Listas de Descripción</li>
-               
-                <section>   
-                    <img class= "htmlImg" src="dd.jpg" alt="Estructura semantica HTML" width="100px">
-                </section>
-
-                <p class="parrafos">
-                    
-                    Las listas de definiciones se usan cuando queremos hacer una enumeración tipo “diccionario” donde tenemos varios términos y su definición o descripción. <br><br>
-                    Estos términos y sus definiciones o descripciones podríamos ponerlos de varias maneras dentro de una página web (como texto sin más, como lista ordenada, no ordenada…) y una de estas maneras es ponerlo como lista de definiciones.<br><br>
-
-                    Para crear una lista de definiciones debemos usar las etiquetas:<br><br> 
-                    &lt;dl><br>
-                    Indica que dentro de ella va a ir una lista de definiciones o lista de descripciones.<br><br>
-
-                    &lt;dt><br>
-                    Indica que dentro de ella va un término que vamos a definir.<br><br>
-
-                    &lt;dd><br>
-                    Dice que dentro de ella se encuentra una definición o descripción asociada a un término. Un término podría tener varias descripciones. Por ejemplo el término Autor podría tener como descripciones: Mateo Renzi, Olivo Pascua, Jorge Guillén.                     
-                </p>
-            </ul>
+        <div class="contenido">
+            <h4 class="concepto">ATRIBUTOS</h4>
+            <p class="parrafos">src="Nombre del archivo"</p>
+            <p class="parrafos">height="Altura"</p>
+            <p class="parrafos">width="Ancho"</p>
+            <p class="parrafos">alt="Texto alternativo(¿De que trata esa imagen?)" </p>
         </div>
-    </section>
+    </div>
+</div>
+
+<div>
+    <h3>Tipos de Listas</h3>
+    <div class="contenido">
+        <h4 class="concepto">Listas Ordenadas</h4>
+        <img class= "htmlImg" src="listas.png" alt="Estructura semantica HTML"> <!--  width="100px"> -->
+        <p class="parrafos">Si lo que pretendemos es definir una lista ordenada, lo tendremos que hacer entre las etiquetas &lt;ol> (ol indica ordered list)</p>
+
+        <p class="parrafos">Cada elemento de la lista se escribirá con la etiqueta &lt;li>.Al ser listas ordenadas los símbolos por defecto serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos elementos de la lista.</p>
+    </div>
+
+    <div class="contenido">
+        <img class= "htmlImg" src="listasNoOrde.png" alt="Estructura semantica HTML"> <!--  width="100px"> -->
+        
+        <h4 class="concepto">Listas No Ordenadas</h4>
+        <p class="parrafos">Las listas no ordenadas son aquellas que se encuentran entre las etiquetas &lt;ul> (ul indica unordered lista.</p>
+        <p class="parrafos">Cada elemento de la lista se escribirá con la etiqueta &lt;li>.</p>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <div class="contenido">
+        <h4 class="concepto">Listas de Descripción</h4>
+        <img class= "htmlImg" src="dd.jpg" alt="Estructura semantica HTML"> <!--  width="100px"> -->
+        <p class="parrafos"> Las listas de definiciones se usan cuando queremos hacer una enumeración tipo “diccionario” donde tenemos varios términos y su definición o descripción. </p>
+        <p class="parrafos">Estos términos y sus definiciones o descripciones podríamos ponerlos de varias maneras dentro de una página web (como texto sin más, como lista ordenada, no ordenada…) y una de estas maneras es ponerlo como lista de definiciones.</p>
+        <p class="parrafos">Para crear una lista de definiciones debemos usar las etiquetas:</p>
+        <p class="parrafos">&lt;dl></p>
+        <p class="parrafos">Indica que dentro de ella va a ir una lista de definiciones o lista de descripciones.</p>   
+        <p class="parrafos">&lt;dt></p>
+        <p class="parrafos">Indica que dentro de ella va un término que vamos a definir.</p>
+        <p class="parrafos">&lt;dd></p>
+        <p class="parrafos">Dice que dentro de ella se encuentra una definición o descripción asociada a un término. Un término podría tener varias descripciones. Por ejemplo el término Autor podría tener como descripciones: Mateo Renzi, Olivo Pascua, Jorge Guillén.</p>
+    </div>
+</div>
 
 
+<div>
+    <h3>Tablas</h3>
+    <div class="contenido">
+        <h4 class="concepto">Tabla </h4>
+        <p class="parrafos">&lt;table> </p>
+        <p class="parrafos">Se emplea para definir tablas de datos</p>
+    </div>
 
+    <div class="contenido">
+        <h4 class="concepto">Descripción</h4>
+        <p class="parrafos">&lt;caption></p>
+        <p class="parrafos">Se emplea para definir la leyenda o título de una tabla.</p>
+    </div>
 
+    <div class="contenido">
+        <h4 class="concepto">Encabezado</h4>
+        <p class="parrafos">&lt;thead></p>
+        <p class="parrafos">Se emplea para definir los títulos de la tabla. Tenga en cuenta que los encabezados de la tabla aún requiere de una fila para contenerlos.</p>
+    </div>
 
-<section>   
-        <h3>Tablas</h3>
-        <div class="textoH">
-            <ul>    
-                <li class="textoVi">Tabla </li>
-                <p class="parrafos">
-                    &lt;table> <br><br>
-                    Se emplea para definir tablas de datos
-                </p>
-                
-                <li class="textoVi">Descripción</li>               
-                <p class="parrafos">
-                  &lt;caption><br><br>
-                  Se emplea para definir la leyenda o título de una tabla
-                </p>
+    <div class="contenido">
+        <h4 class="concepto">Pie de página</h4>
+        <p class="parrafos">&lt;tfoot></p>  
+        <p class="parrafos">Se emplea para contener los totales de los datos de la tabla. Los pies de página se utilizan a menudo para contener sumas, diferencias, y otros resultados de los datos.</p>
+    </div>
+   
+    
+    <div class="contenido">
+         <img class= "htmlImg" src="tabla.png" alt="Estructuras de las tablas en HTML"> <!--  width="100px"> -->
+   
+        <h4 class="concepto">Cuerpo de la página</h4>
+        <p class="parrafos">&lt;tbody></p>
+        <p class="parrafos">Se emplea para contener todos los datos de la tabla, con exclusión de los encabezados de la tabla.</p>
+    </div>
 
-                <li class="textoVi">Encabezado</li>
-                <p class="parrafos">
-                    &lt;thead><br><br>
-                Se emplea para definir los títulos de la tabla. Tenga en cuenta que los encabezados de la tabla aún requiere de una fila para contenerlos.
-                </p>
+    <div class="contenido">
+        <h4 class="concepto">Fila</h4>
+        <p class="parrafos">&lt;tr></p>
+        <p class="parrafos">Se emplea para definir cada fila de las tablas de datos</p>
+    </div>  
 
-                <li class="textoVi">Pie de página</li>
-                <p class="parrafos">
-                  &lt;tfoot><br><br>
-                   Se emplea para contener los totales de los datos de la tabla. Los pies de página se utilizan a menudo para contener sumas, diferencias, y otros resultados de los datos.
-                </p>
+    <div class="contenido">
+        <h4 class="concepto">Celda del encabezado</h4>
+        <p class="parrafos">&lt;th></p> 
+        <p class="parrafos">Se emplea para definir las celdas que son cabecera de una fila o de una columna de la tabla.</p>
+    </div>
 
-                <section>   
-                    <img class= "htmlImg" src="tabla.png" alt="Estructuras de las tablas en HTML" width="100px">
-                </section>
-              
-                <li class="textoVi">Cuerpo de la página</li>
-                <p class="parrafos">
-                  &lt;tbody><br><br>
-                  Se emplea para contener todos los datos de la tabla, con exclusión de los encabezados de la tabla
-                </p>
+    <div class="contenido">
+        <h4 class="concepto">Celda del cuerpo y pie de página</h4>
+        <p class="parrafos">&lt;td></p>
+        <p class="parrafos">Se emplea para definir cada una de las celdas que forman las filas de una tabla, es decir, las columnas de la tabla.</p>
+    </div>
 
-                <li class="textoVi">Fila</li>
-                <p class="parrafos">
-                  &lt;tr><br><br>
-                  Se emplea para definir cada fila de las tablas de datos
-                </p>
-
-                <li class="textoVi">Celda del encabezado</li>
-               <p class="parrafos">
-                  &lt;th><br><br>
-                  Se emplea para definir las celdas que son cabecera de una fila o de una columna de la tabla
-                </p>
-
-                <li class="textoVi">Celda del cuerpo y pie de página</li>
-               <p class="parrafos">
-                  &lt;td><br><br>
-                  Se emplea para definir cada una de las celdas que forman las filas de una tabla, es decir, las columnas de la tabla
-                </p>
-               
-            </ul>
-        </div>
-    </section>
-
-
-
+</div>
 
 </main>
-
+<footer>
+    <!--YA QUEDO HTML-->
+</footer>
 </body>
 </html>

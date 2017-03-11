@@ -1,6 +1,6 @@
 
 .concepto{
-    color:#e0d8bf;             
+    color:#e6004c;             
     text-align: left;
     font-family: 'Raleway', sans-serif;
     margin-left: 50px;
@@ -16,33 +16,32 @@
 }
 
 .centerImg{
-    margin-left: 300px;
-    margin-top: 100px;
-    float: center;
+    text-align: center;
+    
     }
 
 .tableSol{
-    border-color: #41292C;
+    border-color:lightgray;
     border-width: 10px;
     border-style: inset;
-    background-color:#41292C; 
+    background-color:white; 
     
     font-family: 'Raleway', sans-serif;
     
-    margin-left: 200px;
+    margin:auto;
 
     
     
 }
 
 .sr{
-    background-color: #00cccc;
+    background-color: white;
     text-align: center;
 }
 
 .back{
     text-align: center;
-    background-color: #00cccc;
+    background-color: white;
 }
 
 
@@ -74,4 +73,11 @@ dd{
     margin-bottom: 20px;
     float: left;
     width: 400px;
+}
+.contenido{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right:  50px;
+    background-color: white;
 }
