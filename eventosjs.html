@@ -27,16 +27,114 @@
 
         <main>      
             <div>
-                <h3></h3>
+                <h3>Funcionamiento</h3>
                 <div class="contenido">
                     <img class= "htmlImg" src="" alt=""> <!--  width="100px"> -->
-                    <p class="parrafos"></p>
+                    <p class="parrafos">elemento &rarr; evento &rarr; código</p>
+                    <p class="parrafos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asocia&nbsp;&nbsp;&nbsp;&nbsp;&darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ejecutar</p>
+                    <div class ="colum">
+                    <h4 class="concepto">Tipos de eventos</h4>
+                    <div class="columnas">
+                        <h5 class="concepto">Interfaz de usuario</h5>
+                        <ul>
+                            <li class="parrafos">scroll</li>
+                            <li class="parrafos">resize</li>
+                            <li class="parrafos">load</li>
+                        </ul>
+                    </div>
+
+                    <div class="columnas">
+                        <h5 class="concepto">Teclado</h5>
+                        <ul>
+                            <li class="parrafos">key press</li>
+                            <li class="parrafos">key down</li>
+                            <li class="parrafos">key up</li>
+                        </ul>
+                    </div>
+
+                    <div class="columnas">
+                        <h5 class="concepto">Ratón</h5>
+                        <ul>
+                            <li class="parrafos">click</li>
+                            <li class="parrafos">double click</li>
+                            <li class="parrafos">mouse down</li>
+                        </ul>
+                    </div>
+
+                    <div class="columnas">
+                        <h5 class="concepto">Formularios</h5>
+                        <ul>
+                            <li class="parrafos">input</li>
+                            <li class="parrafos">submit</li>
+                            <li class="parrafos">change</li>
+                        </ul>
+                    </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div>
+                <h3>Pasos para el manejo de eventos</h3>
+                <div class="contenido">
+                    <h4 class="concepto">1. </h4>
+                    <p class="parrafos">Seleccionar el elemento(nodo)</p>
+                
+                    <h4 class="concepto">2. </h4>
+                    <p class="parrafos">Indicar el evento en el elemento seleccionado</p>
+                
+                    <h4 class="concepto">3. </h4>
+                    <p class="parrafos">Escribir el código(script) a ejecutar en respuesta al evento.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Tipos de manejadores de eventos</h3>
+                <div class="contenido">
+                    <h4 class="concepto">Manejador HTML</h4>
+                    <h5 class="concepto">Sintaxis: </h5>
+                    <p class="parrafos">&lt;elemento> onEvento = "código"> Contenido &lt;/elemento></p>
+                    <h5 class="concepto">Ejemplo: </h5>
+                    <p class="parrafos">&lt;a> onclick = "alert('Hola')"> Saluda &lt;/a></p>
+                </div>
+
+                <div class="contenido">
+                    <h4 class="concepto">Manejador DOM Tradicional</h4>
+                    <p class="parrafos">Desventaja: 1 evento a 1 elemento.</p>
+                    <h5 class="concepto">Sintaxis: </h5>
+                    <p class="parrafos">elemento.onevento = nombreFunción</p>
+                    <h5 class="concepto">Ejemplo: </h5>
+                    <p class="parrafos">document.getElementById('enlace').onclick = function(){ alert ('Hola')}</p>
+                </div>
+
+                <div class="contenido">
+                    <h4 class="concepto">Escuchador DOM nivel 2</h4>
+                    <h5 class="concepto">Sintaxis: </h5>
+                    <p class="parrafos">elemento.addEventListener ('evento',nombreFunción)</p>
+                    <h5 class="concepto">Ejemplo: </h5>
+                    <p class="parrafos">document.getElementById('enlace').addEventListener('click',saludar)</p>
                 </div>
             </div>
         </main>
 
         <footer>
-            <!--YA QUEDO HTML-->
+            <p>Universidad Autónoma de San Luis Potosí<br>
+            Facultad de Ingeniería<br>
+            Area de Computación e Informática<br>
+            Tecnologías Web<br>
+            Autor: Irma Patricia Delgado Solano<br>
+            Asesor: M.C. Hernández Castro Froylan Eloy<br>
+        </p>
+        <p>
+            <a target="_blank" href= "http://validator.w3.org/check?url=irmads94.github.io/eventosjs.html">
+                <img src="http://www.w3.org/ICONS/valid-html401" alt="Valid HTML">
+            </a>
+       
+            <a target="_blank" href= "https://jigsaw.w3.org/css-validator/validator?uri=irmads94.github.io/eventosjs.html">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS">
+            </a>
+        </p>
         </footer>
 
     </body>

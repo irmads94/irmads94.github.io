@@ -27,16 +27,66 @@
 
         <main>      
             <div>
-                <h3></h3>
+                <h3>Introducción</h3>
                 <div class="contenido">
                     <img class= "htmlImg" src="" alt=""> <!--  width="100px"> -->
-                    <p class="parrafos"></p>
+                    <p class="parrafos">Document Object Model</p>
+                    <p class="parrafos">Representa un documento HTML en forma de una estructura de árbol.</p>
+                    <p class="parrafos">El documento se puede manipular facilmente a traves del árbol, es decir, agregar, eliminar, modificar elementos, etc.</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Acceder elementos del documento</h3>
+                <div class="contenido">
+                    <h4 class="concepto">Métodos del documento</h4>
+                    <p class="parrafos">document.getElementsByTagName('etiqueta') - regresa un arreglo de Nodos.</p>
+                    <p class="parrafos">document.getElementsByClassName('clase') - regresa un arreglo de Nodos.</p>
+                    <p class="parrafos">document.getElementById('identificador') - regresa un nodo.</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Modificar el contenido de un elemento</h3>
+                <div class="contenido">
+                    <h4 class="concepto">Atributos</h4>
+                    <p class="parrafos">elemento.textContent = 'texto' </p>
+                    <p class="parrafos">elemento.innerHTML = 'código HTML'</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Agregar elementos(nodos) nuevos</h3>
+                <div class="contenido">
+                    <h4 class="concepto">5 Pasos</h4>
+                    <ul>
+                        <li class="parrafos">Crear el elemento - createElement()</li>
+                        <li class="parrafos">Crear el contenido - createTextNode()</li>
+                        <li class="parrafos">Añadir el contenido al elemento - appendChild()</li>
+                        <li class="parrafos">Agregar atributos - setAttribute()</li>
+                        <li class="parrafos">Agregar el nuevo elemento al documento - appendChild()</li>
+                    </ul>
                 </div>
             </div>
         </main>
 
         <footer>
-            <!--YA QUEDO HTML-->
+            <p>Universidad Autónoma de San Luis Potosí<br>
+            Facultad de Ingeniería<br>
+            Area de Computación e Informática<br>
+            Tecnologías Web<br>
+            Autor: Irma Patricia Delgado Solano<br>
+            Asesor: M.C. Hernández Castro Froylan Eloy<br>
+        </p>
+        <p>
+            <a target="_blank" href= "http://validator.w3.org/check?url=irmads94.github.io/dom.html">
+                <img src="http://www.w3.org/ICONS/valid-html401" alt="Valid HTML">
+            </a>
+       
+            <a target="_blank" href= "https://jigsaw.w3.org/css-validator/validator?uri=irmads94.github.io/dom.html">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS">
+            </a>
+        </p>
         </footer>
 
     </body>

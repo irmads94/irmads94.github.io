@@ -33,9 +33,23 @@
     
     
 }
+.tableSol{
+    border-color:lightgray;
+    border-width: 10px;
+    border-style: inset;
+    background-color:white; 
+    
+    font-family: 'Raleway', sans-serif;
+    
+    margin:auto;
+
+    
+    
+}
 
 .sr{
     background-color: white;
+    border: black 5px solid;
     text-align: center;
 }
 
@@ -80,4 +94,15 @@ dd{
     margin-left: 50px;
     margin-right:  50px;
     background-color: white;
+}
+
+.columnas{
+  
+    float:left ; 
+   background-color: white;
+}
+
+.colum{
+    background-color:white;
+    margin: 150px;
 }

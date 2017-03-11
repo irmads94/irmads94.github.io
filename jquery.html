@@ -27,16 +27,175 @@
 
         <main>      
             <div>
-                <h3></h3>
+                <h3>Introducción</h3>
                 <div class="contenido">
                     <img class= "htmlImg" src="" alt=""> <!--  width="100px"> -->
-                    <p class="parrafos"></p>
+                    <p class="parrafos"> Es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, en el 2016.</p>
+                    <h4 class="concepto">Simplifica</h4>
+                    <ul>
+                        <li class="parrafos">La interacción con HTML</li>
+                        <li class="parrafos">La manipulación DOM</li>
+                        <li class="parrafos">Manejo de eventos</li>
+                        <li class="parrafos">Animaciones</li>
+                        <li class="parrafos">Interacciones AJAX</li>
+                    </ul>
+                    <h4 class="concepto">Garantiza compatibilidad entre navegadores</h4>
                 </div>
             </div>
+
+            <div>
+                <h3>jQuery()</h3>
+                <div class="contenido">
+                    <p class="parrafos">Todo se realiza a traves de una función JQuery()</p>
+                    <p class="parrafos">Recibe como parámetro una expresión CSS y regresa un elemento JQuery</p>
+                    <p class="parrafos">Ejemplo:</p>
+                    <p class="parrafos">var objeto = jQuery(SelectorCSS)</p>
+                    <p class="parrafos">objeto es un "Objeto jQuery"</p>
+                    
+                </div>
+            </div>  
+            
+            <div>
+                <h3>Tipos de selectores</h3>
+                <div class="contenido">
+                    <p class="parrafos">* </p>
+                    <p class="parrafos">elemento</p>
+                    <p class="parrafos">#id</p>
+                    <p class="parrafos">.clase</p>
+                    <p class="parrafos">sel1,sel2</p>
+                    <h4 class="concepto">Ejemplo: </h4>
+                    <p class="parrafos">var todos = jQuery('*')</p>
+                </div>
+
+                <h3>Filtros básicos</h3>
+                <div class="contenido">
+                    <p class="parrafos">:first - Regresa el primero</p>
+                    <p class="parrafos">:last - Regresa el ultimo</p>
+                    <p class="parrafos">:even - Regresa objetos en posición par</p>
+                    <p class="parrafos">:odd - Regresa objetos en posición impar</p>
+                    <p class="parrafos">:eq(index) - Regresa el objeto que esta en la posición(index) </p>
+                    <p class="parrafos">:gt(index) - Regresa objetos mas alla de la posición(index)</p>
+                    <p class="parrafos">:lt(index) - Regresa el objeto que esta antes de una posición(index)</p>
+                    <p class="parrafos">:not(selector) - Negación</p>
+                   
+                    <h4 class="concepto">Ejemplo: </h4>
+                    <p class="parrafos">var primero = jQuery('*:first)</p>
+                    <p class="parrafos">var segundo = jQuery('*:eq(1)')</p>
+                    <p class="parrafos">var sinParrafos = jQuery('*:not(p)')</p>
+                 </div>
+            </div>
+
+            <div>
+                <h3>Métodos jQuery</h3>
+                <div class="contenido">
+                    <table class="tableSol"> 
+                <thead>
+                    <tr class="sr">
+                        <th></th>
+                        <th>MÉTODO</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr class="sr">
+                        <td rowspan="2">Contenido</td>
+                        <td>.html()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td>.text()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td rowspan="4"> Elementos</td>
+                        <td>.before()</td>
+                    </tr>
+
+                    <tr class="sr">
+                        <td>.after()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td>.prepend()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td>.append()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td rowspan="4">Atributos</td>
+                        <td>.css()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td>.attr()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td>.addClass()</td>
+                    </tr>
+                    <tr class="sr">
+                        <td>.removeClass()</td>
+                    </tr>
+
+                    <tr class="sr">
+                        <td rowspan="2">Eventos documento</td>
+                        <td>.ready()</td>
+                    </tr>
+                    
+                    <tr class="sr">
+                        <td>.load()</td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contenido">
+            <h4 class="concepto">Sintaxis</h4>
+            <h5 class="concepto">Elementos</h5>
+            <p class="parrafos"> &lt;etiqueta> contenido &lt;etiqueta> </p>
+            <p class="parrafos">Para insertar antes de la etiqueta - .before()</p>
+            <p class="parrafos">Para insertar antes del contenido - .prepend()</p>
+            <p class="parrafos">Para insertar antes de la etiqueta de cierre - .append()</p>
+            <p class="parrafos">Para insertar después de la etiqueta de cierre - .after()</p>
+
+            <h5 class="concepto">Eventos documento</h5>
+            <p class="parrafos">$(document).ready(funcion) ó $(funcion)</p>
+            <p class="parrafos">$(document).load(funcion)</p>
+            <p class="parrafos">var parrafos = jQuery('p').text('Nuevo Parrafo')</p>
+            <p class="parrafos">var divs = $('div').css('background-color','red')</p>
+            
+            
+        </div>
+
+        <div class="contenido">
+            <h4 class="concepto">Crear objetos jQuery</h4>
+            <p class="parrafos">var $nuevo = $('&lt;p> Parrafo Nuevo &lt;/p>') - Crea un parrafo nuevo ("Parrafo Nuevo").</p>
+            <p class="parrafos">var $nuevo2 = $('&lt;p>') - Crea un parrafo nuevo vacio.
+        </div>
+    </div>
+
         </main>
 
         <footer>
-            <!--YA QUEDO HTML-->
+            <p>Universidad Autónoma de San Luis Potosí<br>
+            Facultad de Ingeniería<br>
+            Area de Computación e Informática<br>
+            Tecnologías Web<br>
+            Autor: Irma Patricia Delgado Solano<br>
+            Asesor: M.C. Hernández Castro Froylan Eloy<br>
+        </p>
+        <p>
+            <a target="_blank" href= "http://validator.w3.org/check?url=irmads94.github.io/jquery.html">
+                <img src="http://www.w3.org/ICONS/valid-html401" alt="Valid HTML">
+            </a>
+       
+            <a target="_blank" href= "https://jigsaw.w3.org/css-validator/validator?uri=irmads94.github.io/jquery.html">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS">
+            </a>
+        </p>
         </footer>
 
     </body>
