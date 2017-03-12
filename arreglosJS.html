@@ -27,11 +27,122 @@
 
         <main>      
             <div>
-                <h3></h3>
+                <h3>Acciones </h3>
                 <div class="contenido">
-                    <img class= "htmlImg" src="" alt=""> <!--  width="100px"> -->
-                    <p class="parrafos"></p>
+                    <img class= "htmlImg" src="Arrays.jpg" alt="Arreglos en JS"> <!--  width="100px"> -->
+                    <br>
+                    <ul>
+                        <li class="parrafos">Creacion.</li>
+                        <li class="parrafos">Acceso.</li>
+                        <li class="parrafos">Propiedades.</li>
+                        <li class="parrafos">Iteracion.</li>
+                        <li class="parrafos">Caracteristicas especiales (Heterogeneos o Jagged(dentado))</li>
+                        <li class="parrafos">Metodos</li>
+                    </ul>
+                    <br><br>
                 </div>
+            </div>
+
+            <div>
+                <h3>Creación</h3>
+                <div class="contenido">
+                    <img class= "htmlImg" src="arrayVacios.jpg" alt="Arreglos vacios"> <!--  width="100px"> -->
+                    <h4 class="concepto">Arreglos vacios</h4>
+                    <p class="parrafos">var arreglo = new Array();</p>
+                    <p class="parrafos">var arreglo = [];</p>
+                   
+                </div>
+                
+                <div class="contenido">
+                    <img class= "htmlImg" src="arrayHete.png" alt="Arreglos Heterogeneos"> <!--  width="100px"> -->
+                    <h4 class="concepto">Arreglos Heterogeneos</h4>
+                    <p class="parrafos">var arreglo = Array('hola',123,true);</p>
+                    <p class="parrafos">var arreglo = ['mundo',true,1];</p>
+                </div>
+                
+                <div class="contenido">
+                    <img class= "htmlImg" src="arrayBidi.png" alt="Arreglos Bidimensionales"> <!--  width="100px"> -->
+                    <br><br><br>
+                    <h4 class="concepto">Arreglos Bidimensionales</h4>
+                    <p class="parrafos">var matriz = Array(Array(1,2,3),Array(4,5,6));</p>
+                    <p class="parrafos">var matriz = [[1,2,3],[4,5,6]];</p>
+                    <br><br><br>
+                </div>
+
+                <div class="contenido">
+                   
+                    <h4 class="concepto">Arreglos Jagged(Dentados)</h4> 
+                    <img class= "htmlImg" src="arrayDenta.jpg" alt="Arreglos Dentados"> <!--  width="100px"> -->
+                    <br><br><br><br><br><br><br><br>
+                    <p class="parrafos">var jagged = Array(Array('A','B'),Array('C','D','E','F'),Array('G'));</p>
+                    <p class="parrafos">var jagged = [['A','B'],['C','D','E','F'],['G']];</p>
+                    <br><br><br><br><br><br><br><br>
+                </div>
+                
+            </div>
+
+            
+            <div>
+                <h3>Acceso</h3>
+                <div class="contenido">
+                    <img class= "htmlImg" src="arregloacc.png" alt="Acceso a los Arreglos"> <!--  width="100px"> -->
+                    <p class="parrafos">Teniendo var arreglo = new Array('mundo','hola',123,true);</p>
+                    <p class="parrafos">y enseguida inserto un numero(456) en la posición 10 (Sabiendo que solo tengo 4 elementos), JavaScript no marca error o excepción, si no que lo inserta en la posición 10, y de la posición 4 a la 9 queda un tipo de dato "indefinido(undefined)", quedando de la siguiente manera:</p>
+                    <p class="parrafos">Array('mundo','hola',123,true,undefined,undefined,undefined,undefined,undefined,undefined,456)</p>
+               
+                    <p class="parrafos">En otros lenguajes de programación, intentar acceder a un índice de array inexistente devuelve un error, pero en JavaScript no es así. Si escribimos arreglo[40] cuando sólo hemos definido hasta el índice 10, el resultado es que arreglo[40] devuelve undefined. A diferencia de en otros lenguajes, los arrays en JavaScript no tienen un número fijo de elementos, sino que el número de elementos del array se ajusta dinámicamente según las necesidades.</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Métodos</h3>
+                <div class="contenido">
+                    <ul>
+                        <li class="parrafos">concat() - Concatena 2 arreglos, regresa un arreglo nuevo.</li>
+                        <li class="parrafos">join() - Une todos los elementos de un arreglo, regresa una cadena.</li>
+                        <li class="parrafos">push() - Agrega un elemento al final del arreglo.</li>
+                        <li class="parrafos">pop() - Elimina el ultimo elemento del arreglo.</li>
+                        <li class="parrafos">reverse() - Regresa un arreglo con los elementos en orden invertido.</li>
+                        <li class="parrafos">sort() - Ordena los elementos de manera ascendente (abecedario).</li>
+                        <li class="parrafos">shift() - Elimina al inicio</li>
+                        <li class="parrafos">unshift() - Inserta al inicio</li>
+                        <li class="parrafos">splice() - Agregar/eliminar elementos en cualquier posición.</li>
+                        <li class="parrafos">slice() - Extrae un subarreglo.
+                        <li class="parrafos">indexof() - Busca un elemento en el arreglo, regresa el indice, (-1, en caso de que no exista)</li>
+                        <li class="parrafos">foreach(arreglo, elemento,indice) - Iteraciones en un arreglo, mediante una función</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h3>Funciones</h3>
+                <div class="contenido">
+                    <h4 class="concepto">Declaración</h4>
+                    <img class= "htmlImg" src="funcion.png" alt="Funciones JS"> <!--  width="100px"> -->
+                    <pre class="parrafos">
+                        function nombreFuncion(parametros)
+                            {
+                                instrucciones;
+                            }
+                    </pre>
+                    <h5 class="concepto">NOTAS </h5>
+                    <p class="parrafos">Los parametros pueden ser opcionales</p>
+                </div>
+                
+                <div class="contenido">
+                    <h4 class="concepto">Expresión</h4>
+                    <img class= "htmlImg" src="anonima.png" alt="Funciones JS"> <!--  width="100px"> -->
+                      <pre class="parrafos">
+                          var nombreFuncion = function nombreOpcional(parametros)
+                                                {
+                                                    instrucciones;
+                                                }
+                    </pre>
+                    <h5 class="concepto">NOTAS </h5>
+                    <p class="parrafos">Los parametros pueden ser opcionales</p>
+                    <p class="parrafos">En caso de no poner nombre a la función se le denomina "Función anonima"</p>
+                </div>
+
             </div>
         </main>
 

@@ -157,6 +157,7 @@
             }
 
 			#header {
+               
 		        background-color: #e6004c;
 				font-size: 20px;
                 padding: 10px;
@@ -164,6 +165,7 @@
                 color: black;
                 text-decoration: none;
                 text-align: center;
+                
 			}
             #textoNav{
                 color: white;
